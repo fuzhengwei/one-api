@@ -41,6 +41,7 @@ var CompatibleChannels = []int{
 	channeltype.XAI,
 	channeltype.BaiduV2,
 	channeltype.XunfeiV2,
+	channeltype.CustomOpenAI,
 }
 
 func GetCompatibleChannelMeta(channelType int) (string, []string) {
@@ -85,6 +86,8 @@ func GetCompatibleChannelMeta(channelType int) (string, []string) {
 		return "alibailian", alibailian.ModelList
 	case channeltype.GeminiOpenAICompatible:
 		return "geminiv2", geminiv2.ModelList
+	case channeltype.CustomOpenAI:
+		return "custom-openai", nil
 	default:
 		return "openai", ModelList
 	}

@@ -203,6 +203,12 @@ export const CHANNEL_OPTIONS = {
     value: 8,
     color: 'error'
   },
+  52: {
+    key: 52,
+    text: '自定义渠道 (Chat/Completions)',
+    value: 52,
+    color: 'error'
+  },
   22: {
     key: 22,
     text: '知识库：FastGPT',
