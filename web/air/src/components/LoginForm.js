@@ -90,7 +90,7 @@ const LoginForm = () => {
         userDispatch({ type: 'login', payload: data });
         localStorage.setItem('user', JSON.stringify(data));
         showSuccess('登录成功！');
-        if (username === 'root' && password === '123456') {
+        if (username === 'root' && password === '12345678') {
           Modal.error({ title: '您正在使用默认密码！', content: '请立刻修改默认密码！', centered: true });
         }
         navigate('/token');
